@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 px-2">
+            <a class="navbar-brand" href="../html/index.html"><img src="../assets/img/logo.png"></a>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto" style="max-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../html/index.html">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../html/ProductDetails.html">SẢN PHẨM</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown">
+                    TÀI KHOẢN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/hotro.html">HỖ TRỢ</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./blog.html">BLOG</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../html/about_us.html">VỀ CHÚNG TÔI</a>
+                </li>
+              </ul>
+              <form class="d-flex mr-5">
+                <input class="form-control mr-2 bg-white" type="search" placeholder="Bạn muốn tìm kiếm đồ gì?" style="width: 300px; outline: none;">
+                <button class="btn btn-outline-primary" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              <form class="d-flex" action="../html/signup.html">
+                <a href="../html/signup.html"><button class="btn btn-white  ml-3" type="submit">ĐĂNG NHẬP / ĐĂNG KÝ</button></a>
+                
+            </form>
+            </div>
+          </nav>
+          <header>
+            <div class="video-background-holder">
+                <div class="video-background-overlay"></div>
+                <video  autoplay="autoplay" muted="muted" loop="loop" id ="myVideo">
+                      <source src="../assets/video/header.mp4" type="video/mp4">
+                  </video>
+                <div class="video-background-content container h-100">
+                  <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                      <h1 class="display-4">Figure - Đồ chơi trẻ em </h1>
+                      <p class="lead mb-0">Hãy để trẻ có những giây phút phưu lưu với những nhân vật hoạt hình nổi tiếng</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </header>
+          <div class="content">
+              <div class="review">
+                  <h2>ĐỒ CHƠI FIGURE LÀ GÌ?</h2>
+                  <hr>
+                  <p>Figure là một loại đồ chơi giống như búp bê được thiết kế giống như các nhân vật trong phim, game hoặc truyện tranh. Là một trong những loại hình giải trí phổ biến dành riêng cho những người yêu thích manga và anime, ở Nhật Bản gọi họ là Otaku. Tuy nhiên ở Việt Nam vẫn còn khá mới mẻ và chưa được nhiều người biết đến. Figure được chia thành nhiều loại như Scale Figure (Figure tĩnh), Chibi Figure (mô hình chibi) và Action Figure (có khớp cử động).</p>
+              </div>
+              <div class="brand-new">
+                    <h2>MÔ HÌNH NỔI BẬT</h2>
+                    <hr>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="myCarousel" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="item carousel-item active">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/1.png" class="img-fluid" alt="">									
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình Inosuke</h4>									
+                                                            <p class="item-price"><strike>400.000</strike> <b>300.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/2.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình quy lão Kame</h4>									
+                                                            <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/3.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình Luffy Snake Man</h4>									
+                                                            <p class="item-price"><strike>700.00</strike> <b>560.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>	
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/4.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình SonGoKu</h4>									
+                                                            <p class="item-price"><strike>400.00</strike> <b>269.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>	
+                                            </div>
+                                        </div>
+                                        <div class="item carousel-item">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/5.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình Young Goku</h4>									
+                                                            <p class="item-price"><strike>200.00</strike> <b>169.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>	
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/7.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình Hokage Tsunade</h4>									
+                                                            <p class="item-price"><strike>400.00</strike> <b>329.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>	
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/8.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình Kaneki dạng quỷ</h4>									
+                                                            <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>	
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/9.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình Chopper Mini</h4>									
+                                                            <p class="item-price"><strike>200.00</strike> <b>169.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>	
+                                            </div>
+                                        </div>
+                                        <div class="item carousel-item">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/11.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình Caster/Merlin</h4>									
+                                                            <p class="item-price"><strike>400.00</strike> <b>269.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>	
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/12.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình tứ hoàng Shark</h4>									
+                                                            <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>	
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/13.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình Uzumaki Naruto</h4>									
+                                                            <p class="item-price"><strike>400.00</strike> <b>269.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>	
+                                                <div class="col-sm-3">
+                                                    <div class="thumb-wrapper">
+                                                        <div class="img-box">
+                                                            <img src="../assets/img/img_figure/14.png" class="img-fluid" alt="">										
+                                                        </div>
+                                                        <div class="thumb-content">
+                                                            <h4>Mô hình Roronoa Zoro</h4>									
+                                                            <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                                            <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                                                        </div>						
+                                                    </div>
+                                                </div>	
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <a class="carousel-control-prev bg-primary" href="#myCarousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next bg-primary" href="#myCarousel" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="video-new">
+                <h2>VIDEO REVIEW</h2>
+                <hr>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="myVideoCarousel" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="item carousel-item active">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <a href=""><img src="../assets/img/video_thumnail/1.png" class="img-fluid" alt=""><i class="fa fa-youtube-play"></i></a>   
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <a href=""><img src="../assets/img/video_thumnail/2.png" class="img-fluid" alt=""><i class="fa fa-youtube-play"></i></a>  
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <a href=""><img src="../assets/img/video_thumnail/3.png" class="img-fluid" alt=""><i class="fa fa-youtube-play"></i></a>  
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="item carousel-item">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <a href=""><img src="../assets/img/video_thumnail/4.png" class="img-fluid" alt=""><i class="fa fa-youtube-play"></i></a>  
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <a href=""><img src="../assets/img/video_thumnail/5.png" class="img-fluid" alt=""><i class="fa fa-youtube-play"></i></a>    
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <a href=""><img src="../assets/img/video_thumnail/6.png" class="img-fluid" alt=""><i class="fa fa-youtube-play"></i></a>   
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <a class="carousel-control-prev bg-primary video" href="#myVideoCarousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next bg-primary video" href="#myVideoCarousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+          </div>
+            
+          <footer class="mt-5 bg-dark text-white text-center">
+            <div class="container px-4 pt-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h5 class="text-uppercase">CẢM ƠN BẠN ĐÃ GHÉ THĂM</h5>
+          
+                  <p style="text-align: justify;">
+                    Đây là một website bán đồ chơi figure cho trẻ em, hy vọng khách hàng có những giây phút vui vẻ mua sắm tại đây!
+                    Chúng tôi cam kết phát triển các sản phẩm chất lượng cao và mở rộng phạm vi của mình trong thế giới trò chơi điện tử và anime.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="text-uppercase">Liên kết</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="./index.html" >TRANG CHỦ</a>
+                    </li>
+                    <li>
+                        <a href="./ProductDetails.html" >SẢN PHẨM</a>
+                      
+                    </li>
+                    <li>
+                        <a href="./hotro.html" >HỖ TRỢ</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html" >VỀ CHÚNG TÔI</a>
+                    </li>
+                    <li class="icon">
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+                        <a href="https://twitter.com/?lang=en"> <i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a href="./ProductDetails.html"><i class="fa fa-shopping-basket"></i></a>
+                    </li>
+                    <a href="https://www.youtube.com/" class="button youtube ml-2">
+                        <span class="button-icon">
+                            <i class="fa fa-youtube-play"></i>
+                        </span>
+                        <span class="button-text">
+                            Kênh Video Của Chúng Tôi
+                        </span>
+                    </a>
+                    
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                    <img src="../assets/img/footer-logo.png" height="100px" style="margin-top:20px;">
+                    
+                </div>
+              </div>
+            </div>
+            <div class="text-center p-3" style="background-color: #009933;">
+              © BẢN QUYỀN THUỘC VỀ NGUYỄN DƯƠNG THANH DỰ VÀ NGUYỄN HIẾU HỌC
+              
+            </div>
+          </footer>
+    </div>
+    
+</body>
+</html>

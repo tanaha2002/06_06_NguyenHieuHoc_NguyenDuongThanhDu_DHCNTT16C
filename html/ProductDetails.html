@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style-content.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 px-2">
+            <a class="navbar-brand" href="../html/index.html"><img src="../assets/img/logo.png"></a>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto" style="max-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../html/index.html">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../html/ProductDetails.html">SẢN PHẨM</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown">
+                    TÀI KHOẢN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/hotro.html">HỖ TRỢ</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./blog.html">BLOG</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="../html/about_us.html">VỀ CHÚNG TÔI</a>
+                </li>
+              </ul>
+              <form class="d-flex mr-5">
+                <input class="form-control mr-2 bg-white" type="search" placeholder="Bạn muốn tìm kiếm đồ gì?" style="width: 300px; outline: none;">
+                <button class="btn btn-outline-primary" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              <form class="d-flex" action="">
+                  <button type="button" id ="cart" class="fa fa-shopping-basket btn btn-success m-0 p-2 "> GIỎ HÀNG
+                      <span id="clicks"></span>
+                  </button>
+                        
+                </form>
+                <form class="d-flex" action="../html/signup.html">
+                    <a href="../html/signup.html"><button class="btn btn-white  ml-3" type="submit">ĐĂNG NHẬP / ĐĂNG KÝ</button></a>
+                    
+                </form>
+            </div>
+          </nav>
+          <div class="header">
+            <div class="col-md-12 p-0 bg-white">
+                <img src="../assets/img/header.gif" alt="" srcset="" class="gif-header"> 
+            </div>
+            
+        </div>
+        <div class="content_product">
+            
+            <section id="sidebar">
+                <h6 class="p-1 border-bottom"><a href="index.html">Trang Chủ </a> / <a href="ProductDetails.html">Sản Phẩm</a></h6>
+                <div>
+                    <h6>Giá Sản Phẩm</h6>
+                    <hr>
+                    <form class="ml-md-2">
+                        <div class="form-inline p-sm-2 my-1"> <input type="radio" name="money" id="1_2"> <label for="1_2" class="pl-1">100.000đ - 200.000đ</label> </div>
+                        <div class="form-inline p-sm-2 my-1"> <input type="radio" name="money" id="2_3"> <label for="2_3" class="pl-1">200.000đ - 300.000đ</label> </div>
+                        <div class="form-inline p-md-2 my-1"> <input type="radio" name="money" id="3_"> <label for="3_" class="pl-1">> 300.000đ</label> </div>
+                    </form>
+                </div>
+                <div>
+                    <h6>Loại</h6>
+                    <hr>
+                    <form class="ml-md-2">
+                        <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="scalef"> <label for="scalef" class="pl-1 pt-sm-0 pt-1">Figure Tĩnh</label> </div>
+                        <div class="form-inline border rounded p-sm-2 my-2"> <input type="radio" name="type" id="minif"> <label for="minif" class="pl-1 pt-sm-0 pt-1">Figure Mini</label> </div>
+                        <div class="form-inline border rounded p-md-2 p-sm-1"> <input type="radio" name="type" id="actionf"> <label for="actionf" class="pl-1 pt-sm-0 pt-1">Figure Động </label> </div>
+                    </form>
+                </div>
+            </section>
+            <section id="products">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/1.png" class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Inosuke</h4>
+                                                <p hidden class="description-title">Hashibira Inosuke (嘴平はしびら伊い之の助すけ Hashibira Inosuke?) là một Kiếm sĩ Diệt Quỷ của Đội Diệt Quỷ. Cậu cũng là bạn đồng hành của Kamado Tanjiro và là một trong những nhân vật chính của Thanh Gươm Diệt Quỷ : Kimetsu no Yaiba. </p>			
+                                                <p hidden class="description">Inosuke là một chàng trai trẻ có chiều cao trung bình, nước da nhạt màu và có những múi cơ bắp cực kì săn chắc so với độ tuổi của mình. Nhưng ngược lại với vẻ ngoài cứng rắn đó, Inosuke lại có một khuôn mặt trông rất giống con gái,[3]với đôi mắt to tròn và hàng lông mi dài và một khuôn miệng nhỏ nhắn. Inosuke có tóc ngắn ngang vai màu xanh biển chuyển từ đậm sang nhạt. Mái của cậu được uốn lại thành một chỏm nhọn ở giữa trán.</p>						
+                                                <p class="item-price"><strike>400.000</strike> <b>300.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>						
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/2.png" class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình quy lão Kame</h4>
+                                                <p hidden class="description-title">Quy lão tiên sinh hay Võ thiên Lão sư (武天老師 Muten Roshi?) là một trong những nhân vật chính của bộ truyện Bảy viên ngọc rồng. Ông là người thầy đầu tiên của Goku, nhân vật chính và đã dạy cậu Kamehameha.</p>			
+                                                <p hidden class="description">Tên của ông được bắt nguồn từ Nhật 老师 và dịch qua tiếng Trung là lǎoshī. Ông còn được biết đến với tên gọi là Võ Thiên Lão Sư, Quy lão tiên sinh hoặc Thần rùa. Cái tên Jackie Chun (được ông dùng trong Đại hội võ thuật) bắt nguồn từ tên của Jackie Chan.</p>						
+                                                								
+                                                <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                            </div>		
+                                            <button class="btn btn-primary add-cart" type="button">Thêm vào giỏ</button>				
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/3.png" class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Luffy Snake Man</h4>
+                                                <p hidden class="description-title">Monkey D. Luffy "Mũ Rơm"[n 1][2] (モンキー・D・ルフィ Monkī Dī Rufi?) là một nhân vật hư cấu chính trong manga One Piece đình đám của tác giả Eiichiro Oda. Luffy là người sáng lập và là thuyền trưởng của băng Hải tặc Mũ Rơm, được xem là nhân vật mạnh nhất nhóm Mũ Rơm (Straw Hat) sở hữu sức</p>			
+                                                <p hidden class="description">Luffy xuất hiện lần đầu trong chương manga "Romance Dawn" (Romance Dawn - 冒険の夜明 Romance Dawn - Bōken no Yoake?), đăng trên tạp chí Weekly Shounen Jump ấn bản số 34 ra ngày 4 tháng 8 năm 1997[3].
+
+                                                    Trong chương đầu tiên, Luffy xuất hiện dưới dạng một cậu nhóc 7 tuổi hồn nhiên nhưng không kém phần nghịch ngợm. Sinh ra và lớn lên trên hòn đảo Dawn, trong ngôi làng Foosha thuộc East Blue cùng với người ông Garp của mình. Từ nhỏ, Luffy đã được ông nội huấn luyện rất kỹ lưỡng để trở thành một hải quân xuất sắc theo mong ước của Garp. Ngay từ khi còn nhỏ, Luffy đã cùng gia đình Dadan - một đại gia đình nuôi dưỡng những người cháu của Garp, chống lại băng hải tặc Bluejam quấy rối hòn đảo mà Luffy sinh sống. Tuy nhiên Shanks mới là người khơi dậy tình yêu biển cả đối với cậu bé 7 tuổi này khi có một thời gian dài lưu lại làng Foosha, quê hương của cậu bé Luffy.</p>						
+                                                									
+                                                <p class="item-price"><strike>700.00</strike> <b>560.000₫</b></p>
+                                            </div>						
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>
+                                        </div>
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/4.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình SonGoKu</h4>	
+                                                <p hidden class="description-title">Son Goku (孫悟空 (Tôn Ngộ Không) Son Gokū?), tên khai sinh là Kakarot (カカロット Kakarotto?) là nhân vật chínhtrong series manga Dragon Ball của Toriyama Akira. Cậu là cháu trai nuôi của ông nội Gohan,chồng của Chi-Chi, bố của Gohan và Goten, ông nội của Pan và trong Dragon Ball GT là cụ cố của Goku Jr.Thầy dạy của cậu có Quy lão, Kaio và Whis. Son Goku được đánh giá là nhân vật giả tưởng mạnh nhất mọi thời đại.</p>			
+                                                <p hidden class="description"> Goku vui vẻ, dũng cảm và cũng khá ngây thơ, Goku là một người Saiya từ hành tinh Vegetaban đầu được gửi tới Trái Đất khi là trẻ sơ sinh với nhiệm vụ tiêu diệt hành tinh này. Tuy nhiên, một tai nạn xảy ra,Goku bị mất trí nhớ, khiến cậu trở thành một người có tâm hồn thuần khiết,và sau đó trở thành người bảo vệ vĩ đại của Trái Đất, cũng như người lãnh đạo không chính thức của Đội Chiến Binh Z.Trong suốt cuộc đời mình, cậu luôn tập luyện gian khổ và phấn đấu trở thành chiến binh mạnh nhất có thể,trong khi đồng thời sử dụng sức mạnh và kỹ năng ấy để duy trì hòa bình.</p>								
+                                                <p class="item-price"><strike>400.00</strike> <b>269.000₫</b></p>
+                                            </div>						
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>
+                                        </div>
+                                    </div>	
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/15.png" class="img-fluid" alt=""></a>							
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Tanjiro Kamado</h4>
+                                                <p hidden class="description-title">Kamado Tanjiro (竈門 炭治郎 Kamado Tanjirō?) là nhân vật chính của Thanh Gươm Diệt Quỷ:Kimetsu no Yaiba. Cậu là một kiếm sĩ cấp Canh (Kanoe) của Đội Diệt Quỷ,gia nhập vì nguyện vọng muốn trả thù cho gia đình và biến em gái trở lại thành người. </p>
+                                                <p hidden class="description"> Sau khi trở lại thành người, mắt phải của Tanjiro đã bị mù,màu mắt của cậu giờ đây trở thành màu hồng xám xỉn, con ngươi từ màu trắng giờ đã chuyển đen.Tay trái của cậu đã mọc lại trong lúc là quỷ, nhưng giờ đây nó đã trở nên nhăn nheo và xương xẩu như cánh tay của người già.Cậu cũng đã mất hết cảm giác từ phần khuỷu tay trở xuống.</p>                                                                                                        
+                                                <p class="item-price"><strike>400.000</strike> <b>300.000₫</b></p>
+                                            </div>						
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/16.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Boa Hancock</h4>
+                                                <p hidden class="description-title">Nữ hoàng Hải Tặc Boa Hancock là thuyền trưởng của nhóm hải tặc Kuja,và thành viên nữ duy nhất trong Shichibukai – Thất Vũ Hải, và là Xà Nữ Vương ở Amazon Lily, cai trị bộ tộc Kuja (Cửu Xà) cùng ba người em gái Gorgon, Boa Sandersonia và Boa Marigold.Cô là nhân vật phản diện chính trong arc Amazon Lily.Cô lần đầu tiên được nhắc tới bởi hai anh em Risky lúc cuối phần Thriller Bark, khi so sánh vẻ đẹp huyền thoại của cô với vẻ đẹp các nàng tiên cá. Cô được rất nhiều người công nhận là người phụ nữ đẹp nhất thế giới. </p>
+                                               <p hidden class="description"> Sâu thẳm trong thâm tâm, Boa là một người khá nhạy cảm và dễ bị tổn thương,sợ hãi, lo lắng rằng mọi người sẽ khinh bỉ và ghét bỏ khi biết về quá khứ đau khổ và nhục nhã của cô.Cô ấy cũng mềm mại và từ bi hơn nhiều đối với người khác khi mở lòng.Phần đó của cô ấy chỉ được xuất hiện lần đầu tiên trong vài năm trước Monkey D.Luffy và cô ấy không chỉ kết bạn mà quan trọng hơn là yêu Luffy sâu sắc, thậm chí đồng ý mạo hiểm đến vùng đất đau khổ của cô ấy,từ những ngày của cô ấy của một nô lệ, theo yêu cầu của anh ấy cho anh trai của mình.</p>
+                                                <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                            </div>						
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/17.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Super Saiyan Vegeta</h4>
+                                                <p hidden class="description-title">Vegeta (ベジータ?) là một nhân vật hư cấu trong loạt anime đình đám Dragon Ball Z, Dragon Ball GT và Dragon Ball Super. Anh được tạo ra bởi tác giả Akira Toriyama. Trong Dragon Ball, anh là chồng của Bulma, cha của Trunks và Bulla, anh trai của Tarble. Anh cũng là hoàng tử của tộc người Saiyan. Ngoài Son Goku, Son Gohan và Piccolo, anh là một trong những nhân vật nổi bật nhất trong bộ truyện tranh này. Vegeta luôn coi Goku là đối thủ lớn nhất của mình.</p>
+                                                <p hidden class="description"> Vegeta lạnh lùng, kiêu ngạo, ngông cuồng. Niềm kiêu hãnh và lòng tự trọng của anh chính là điểm nổi bật nhất trong tính cách của anh. Lúc đầu anh là người xấu, nhưng về sau anh đã cải tà quy chính, chiến đấu vì công lý để bảo vệ người thân. Anh rất yêu gia đình của mình đặc biệt là Bulma nhưng anh lại không thổ lộ ra bên ngoài. Anh là hoàng tử của người Saiyan.
+                                                    "Sẽ cần nhiều hơn trò chơi với bộ não để ngăn chặn ta. Ngươi có thể đã xâm chiếm tâm hồn và thể xác ta...Nhưng có một thứ người Saiyan luôn nắm giữ: LÒNG KIÊU HÃNH !" - Vegeta, khi Babidi cố gắng xâm chiếm tâm hồn của anh. </p>                                                									
+                                                <p class="item-price"><strike>700.00</strike> <b>560.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>
+                                        </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/18.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Uchiha Itachi</h4>
+                                                <p hidden class="description-title">Uchiha Itachi (Nhật: うちは イタチ?) là nhân vật hư cấu trong loạt manga và anime Naruto do Kishimoto Masashi sáng tạo nên. Itachi là anh trai của Uchiha Sasuke, và là người gánh lên mình trọng tội tàn sát gần như cả gia tộc Uchiha, trừ Sasuke. Anh đóng vai trò là thành viên của tổ chức tội ác Akatsuki, đồng thời là kẻ thù lớn nhất của Sasuke. Trong phần II của manga, Itachi tham gia vào những vụ mưu sát các ninja sở hữu sức mạnh vĩ thú (人柱力, Jinchuuriki), trước khi phải đối mặt với Sasuke và bỏ mạng trong một trận đấu tay đôi. </p>
+                                                <p hidden class="description"> Itachi là nhân vật được nhiều độc giả Naruto yêu thích,[6] và được giới phê bình đánh giá cao. Sự xuất hiện của anh trong vai phản diện được nhiều ký giả khen ngợi. Dù vậy, cũng có một số người cho rằng màn ra mắt của anh không có gì ấn tượng. Khi quá khứ của Itachi dần hé lộ và chúng thể hiện tầm ảnh hưởng lớn đến cốt truyện thì anh được giới phê bình đón nhận nồng nhiệt.Những trận chiến của anh cũng được ghi nhận là "một trong những trận chiến hay nhất" series.</p>                                                 
+                                                <p class="item-price"><strike>400.00</strike> <b>269.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/19.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Muto Yugi</h4>
+                                                <p hidden class="description-title">Muto Yugi (Nhật: 武藤 遊戯 (Võ-đằng Du-hí)?) là nhân vật chính của bộ manga Yu-Gi-Oh! ("Vua trò chơi"), là một học sinh trung học nhút nhát, hậu đậu, người đã ráp thành công Trò chơi ngàn năm. Yugi có một nhân cách khác thường được gọi là Yugi Bóng tối (hay là "Yugi thứ hai"), một linh hồn tồn tại trong Trò chơi ngàn năm. Những người bạn thân của Yugi là Jonouchi Katsuya, Mazaki Anzu và Honda Hiroto, Bakura Ryo sau này có thêm Otogi Ryuji và đối thủ chính Kaiba Seto.</p>
+                                                <p hidden class="description">Cậu mang trong mình một trái tim nhân hậu và tấm lòng nhân nghĩa, luôn quan tâm giúp đỡ người khác. Từ nhỏ đã bị bạn bè trêu chọc và xa lánh nên Yugi thầm mong ước có được những người bạn thực sự. Và khi cậu mất đến 7 năm để hoàn thành Trò chơi ngàn năm, Yami Yugi đã xuất hiện, và cả những người bạn cũng đến bên cạnh cậu nhiều hơn. Cậu rất vui khi có Yami Yugi bên cạnh. Nhờ năng lực vượt trội mà Yami Yugi đã giúp Yugi vượt qua được rất nhiều thử thách trong cuộc sống, đặc biệt là lúc chiến đấu trong các trò chơi, và giúp cậu có nhiều những người bạn hơn. Tuy nhiên, Yami Yugi luôn nói với cậu rằng những người bạn thực sự mà cậu đang có không phải là nhờ Yami, mà chính là nhờ năng lực bên trong chính con người cậu, một sức mạnh đến từ tâm hồn tràn đầy tình yêu thương.</p>                                                                                                									
+                                                <p class="item-price"><strike>200.00</strike> <b>169.000₫</b></p>                                       
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/20.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Hokage Sesshōmaru</h4>
+                                                <p hidden class="description-title">Sesshoumaru là một Đại Khuyển Yêu quyền năng và làm khiếp sợ cả thế giới phong kiến với danh hiệu Chúa tể vùng Tây Nhật Bản. Anh là anh trai cùng cha khác mẹ với InuYasha - Nhân vật chính trong truyện và là con trai cả của Inu no Taishou. Trong khoảng đầu truyện, Sesshoumaru được khắc họa là nhân vật phản diện, nhưng về sau, cùng với sự thay đổi nhân cách của mình, anh lại được đánh giá như một nhân vật chính diện.</p>
+                                                <p hidden class="description">Sesshoumaru sở hữu sức mạnh siêu phàm mà giới hạn chưa được tiết lộ. Điều được biết là mặc dù phần lớn câu chuyện anh chỉ có một cánh tay duy nhất, nhưng anh có khả năng áp đảo nhiều yêu quái khác một cách dễ dàng mà không gặp bất kì trở ngại.
+
+                                                    Xuyên suốt tác phẩm InuYasha, mọi người đều xoay quanh những mảnh Ngọc Tứ Hồn, thì chỉ có Sesshoumaru như hoàn toàn tách biệt khỏi nơi chốn ồn ào đó. Không giống như những con người lẫn yêu quái khác muốn chiếm đoạt lấy Ngọc Tứ Hồn, Sesshoumaru không hề có hứng thú với nó, thậm chí chẳng cần nó để gia tăng sức mạnh cho bản thân. Anh khinh thường những kẻ bị ngọc Tứ Hồn làm mờ mắt, tranh giết lẫn nhau giành giật nó. Anh không chấp nhận việc bị bất kì ai điều khiển, kể cả khi đó là viên ngọc Tứ Hồn - Thứ có thể gia tăng sức mạnh cho bất kì ai trên thế gian và có sức cám dỗ kinh hoàng. Sesshoumaru chỉ muốn đạt được sức mạnh bằng chính thực lực của mình. Chính vì thế khi cả thế giới Chiến Quốc đảo điên vì viên ngọc này, thì Sesshoumaru lại chẳng xem nó ra gì và sẵn sàng giết chết bất kì ai dám lợi dụng anh cho mục đích riêng.</p>                                               									
+                                                <p class="item-price"><strike>400.00</strike> <b>329.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/21.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Harry Potter</h4>
+                                                <p hidden class="description-title">Harry James Potter (sinh ngày 31 tháng 7 năm 1980) là một phù thủy máu lai, người con duy nhất của James và Lily Potter, và là một trong những pháp sư nổi tiếng nhất thời hiện đại. Chúa tể Voldemort đã cố gắng giết cậu khi cậu mới một năm ba tháng tuổi theo như lời tiên tri của Sybill Trelawney. Cha mẹ Harry đã chết khi họ cố gắng bảo vệ cậu ngay trước khi hắn tấn công Harry. Nỗ lực giết Harry không thành công đã dẫn đến sự sụp đổ đầu tiên của Voldemort và kết thúc của chiến tranh pháp thuật lần thứ nhất. Một kết quả của sự bảo vệ và hy sinh của Lily là Harry đã được bảo vệ bởi tình yêu.</p>
+                                                <p hidden class="description">Harry đã đóng một vai trò quan trọng trong nhiều trận chiến khác của chiến tranh pháp thuật thứ hai, săn lùng và tiêu diệt Voldemort, Trường Sinh Linh Giá cùng với Ron và Hermione. Trong trận chiến Hogwarts, cậu đích thân chứng kiến cái chết của Severus Snape, Fred Weasley và Remus Lupin, Nymphadora Tonks, Colin Creevey, và nhiều người khác. Cậu trực tiếp gặp Voldemort và hi sinh bản thân, biết rằng làm mình như vậy là cách duy nhất để phá hủy Trường Sinh Linh giá còn trong người cậu. Sau khi trúng Lời nguyền giết chóc, cụ Dumbledore tư vấn cho Harry thông tin cơ bản về Voldemort. Harry đã chọn con đường sống; và khi thức dậy, cậu phải đối mặt với Voldemort, đánh bại hắn một lần và mãi mãi.</p>                                                                                                									                                           
+                                                <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">                   
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/22.png" class="img-fluid" alt=""></a>										                                            									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Yagami Raito</h4>
+                                                <p hidden class="description-title">Yagami Raito (Nhật: 夜神 月 (Dạ-Thần Nguyệt) Hepburn: Yagami Raito?, Yagami Light) là một nhân vật hư cấu và nhân vật chính của bộ manga Death Note do Ōba Tsugumi và Obata Takeshi sáng tạo. Cậu được miêu tả là một thiên tài 17 tuổi xuất chúng, nổi tiếng và cuốn hút nhưng hay chán chường; cậu nhặt được Death Note, một cuốn sổ tay chứa năng lực siêu nhiên từ thế giới khác cho phép người dùng nó giết chết bất kì ai bằng việc biết mặt và tên đối tượng, sau khi cuốn sổ bị Tử thần Ryuk đánh rơi xuống nhân giới. Thất vọng trước tình cảnh thế giới mà cậu cho là đã bị mục nát, Raito sau cùng sử dụng Death Note để giết bất kì ai mà cậu cho là không đủ nhân cách để sống trên đời bằng việc chủ mưu thảm sát hàng loạt khắp thế giới với bí danh Kira (キラ?).</p>
+                                                <p hidden class="description">Ōba Tsugumi, tác giả của Death Note nói rằng biên tập viên của ông ấy đã gợi ý họ "Yagami" cho Raito. Ohba nói rằng ông không cảm thấy "quá lo lắng" về ý nghĩa của cái tên (Kanji của "Yagami" là Dạ 夜 - "buổi đêm", và Thần 神); ông nói rằng sau khi tạo ra cảnh cuối cùng trong manga, ông "thích" cảnh cuối cùng tạo nên "ý nghĩa sâu sắc" trong tên của nhân vật Kira, những người thờ phượng Kira tôn thờ anh ấy vào ban đêm dưới ánh sáng của mặt trăng - và tên của anh ấy "Raito" được viết bằng chữ Nguyệt 月.[3] (Đồng thời, Raito là phiên âm tiếng nhật của từ "Light", vì vậy nên bản tiếng Anh hay gọi cậu là "Yagami Light")</p>                                                                                                									                                                                                          									
+                                                <p class="item-price"><strike>200.00</strike> <b>169.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/23.png" class="img-fluid" alt=""></a>										                        									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Kirito</h4>
+                                                <p hidden class="description-title">Kirito là một trong 1.000 người thử nghiệm beta được chọn cho phiên bản beta của Sword Art Online, trò chơi nhập vai trực tuyến nhiều người chơi trong thực tế ảo (VRMMORPG) đầu tiên cho NerveGear và sau đó đã tham gia phiên bản chính thức của trò chơi. Do đó, anh ấy trở thành một trong số 10.000 người chơi bị mắc kẹt trong Sword Art Online, nơi anh ấy vẫn là người chơi solo trong phần lớn thời gian của trò chơi, sẵn sàng đảm nhận vai trò Beater để giảm bớt sự phân biệt đối xử với những người thử nghiệm beta khác, cũng như tích cực tham gia vào các trận đánh Boss với tư cách là một trong những Clearers.</p>
+                                                <p hidden class="description">Kirito tạm thời trở thành thành viên của Moonlit Black Cats sau khi giúp họ thoát khỏi ngục tối nguy hiểm một cách an toàn, nhưng trở lại làm người chơi solo khi một sai sót chết người dẫn đến cái chết của các thành viên guild khác. Tại một thời điểm nào đó trong trò chơi, Kirito được biết đến với cái tên «Hắc kiếm sĩ» (黒 の 剣 士, Kuro no Kenshi?) Do xu hướng mặc trang phục màu đen. Gần cuối trò chơi, Kirito gia nhập Knights of the Blood do thua cược với thủ lĩnh của nó, Heathcliff. Kirito cuối cùng đã kết thúc trò chơi bằng cách đánh bại trùm cuối, do đó hoàn thành trò chơi. </p>                                                                                                									                                                                                          									                                               									
+                                                <p class="item-price"><strike>200.00</strike> <b>169.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/24.png" class="img-fluid" alt=""></a>										                        									                                           									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Portgas D.Ace</h4>
+                                                <p hidden class="description-title">Portgas D. Ace[5] (ポートガス・D・エース Pōtogasu D. Ēsu?) tên thật Gol D. Ace[6] (ゴール・D・エース Gōru D. Ēsu?) có biệt danh Ace Hỏa Quyền là một nhân vật hư cấu và là một nhân vật trong loạt anime và manga One Piece của Eiichiro Oda. Là anh em kết nghĩa của Monkey D. Luffy[7] và Sabo. Ace là đội trưởng Đội 2 của băng hải tặc Râu Trắng[8] và từng là đội trưởng của băng Spade[9], anh đã ăn trái Mera Mera no Mi trở thành người sử dụng năng lực chuyển hóa thành lửa cũng như tạo ra và điều khiển lửa. </p>
+                                                <p hidden class="description">Portgas D. Ace tuy không cùng chung máu mủ ruột thịt với người em trai nuôi Luffy, nhưng ngoại hình hai anh em khá giống nhau. Tuy nhiên, anh có vẻ nghiêm túc so với sự thoải mái của Luffy, cao hơn và cũng cơ bắp hơn cậu. Anh có dáng vẻ thể thao và trông khá trẻ con với những đốm tàng nhang trên mặt, và có thói quen nhướn lông mày trái của mình khi hoài nghi. Khuôn mặt anh gần giống Gol D. Roger, cha đẻ của mình, khi còn trẻ và chưa để ria mép. Đặc điểm dễ nhận dạng nhất của anh là những hình xăm trên cơ thể. Ace có một hình xăm lớn mang biểu tượng của băng hải tặc Râu Trắng trên lưng - hai chiếc xương chéo màu tím phía sau đầu lâu màu tím với bộ râu trắng. Ngoài ra, Ace cũng có một hình xăm với dòng chữ ASCE theo chiều dọc và ký tự S được gạch chéo, hẳn là để tưởng nhớ tới người bạn Sabo thời nhỏ. </p>                                                                                                									                                                                                          									                                               									                                                									
+                                                <p class="item-price"><strike>400.00</strike> <b>329.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/26.png" class="img-fluid" alt=""></a>										                        									                                           									                                           									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Son Goten</h4>
+                                                <p hidden class="description-title">Son Goten (孫悟天 (Tôn Ngộ Thiên)? そん ごてん) là một nhân vật hư cấu trong Dragon Ball Z và Dragon Ball GT, Dragon Ball Super. Goten là con thứ hai và cuối cùng của nhân vật chính của bộ truyện, Goku và công chúa của Gyuumaou tên là Chichi. Son Goten đã được tạo ra trong truyện để thay thế cho Goku. Tuy nhiên, Toriyama đã buộc phải mang Goku trở lại khi các fan hâm mộ không chấp nhận việc thay thế nhân vật chính với một phiên bản giống hệt như vậy. Goten là bạn tốt nhất của Trunks từ bé.</p>
+                                                <p hidden class="description">Son Goten rất giống Son Goku lúc bé. Goten rất ham học võ ngay từ lúc bé và tu thành siêu Saiyan chỉ trong 3 tháng. Từ bé, Goten rất chơi thân với Trunks, con trai Vegeta và lúc nào cả hai cũng luyện võ chung.Sau này, Goten và Trunks đã tập thành công phép Lưỡng Long Nhất Thể và cả hai kết hợp thành Gotenks và được Piccolo huấn luyện và đạt được tới cấp Siêu Saiyan cấp 3.</p>                                               									
+                                                <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/25.png" class="img-fluid" alt=""></a>										                        									                                           									                                           									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Son Gohan</h4>
+                                                <p hidden class="description-title">Son Gohan (孫悟飯 (Tôn Ngộ Phạn)?) là một nhân vật hư cấu trong Dragon Ball. Được tạo ra bởi Akira Toriyama. Là con trai cả của Goku và Chi-Chi, anh trai của Son Goten, và là người Saiya lai Trái Đất đầu tiên. Cậu được đặt tên theo tên của ông nuôi Goku (Đại thánh Son Gohan). </p>
+                                                <p hidden class="description">Gohan là một người có trí tuệ của người Trái Đất, nhút nhát và hiếu học, và là một đứa trẻ không có tinh thần chiến đấu của người Saiya. Cậu đã phải sử dụng một nửa người Saiya tiềm năng và sự tức giận để trở nên mạnh hơn (khi đánh với Cell), trở thành một trong những người mạnh nhất trong các chiến binh Z. Là một người có học, Gohan đã từ bỏ nhiệm vụ siêu anh hùng của mình và dùng tâm trí của mình để trở thành một học giả. Sau nhiều biến cố, anh nhận ra mình phải mạnh mẽ hơn để bảo vệ mọi người nên đã quay lại tập luyện với thầy Piccolo của mình.</p>                                               									
+                                                <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/27.png" class="img-fluid" alt=""></a>										                        									                                           									                                           									                              									
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Iron Man</h4>
+                                                <p hidden class="description-title">Iron Man (tên thật là Tony Stark) là một siêu anh hùng hư cấu xuất hiện trong truyện tranh của Mỹ được xuất bản bởi Marvel Comics, cũng như các phương tiện truyền thông liên quan. Nhân vật này đã được sáng tác bởi nhà văn - nhà biên tập Stan Lee, được phát triển bởi Larry Lieber, và được thiết kế bởi họa sĩ Don Heck và Jack Kirby. Nhân vật xuất hiện lần đầu tiên trong truyện tranh Tales of Suspense # 39 (tháng 3 năm 1963).</p>
+                                                <p hidden class="description">Anh được miêu tả là một tỉ phú người Mỹ, một ông trùm ngành công nghiệp, một kĩ sư thiên tài, Tony bị chấn thương ngực nặng trong một vụ bắt cóc, bị những kẻ bắt cóc ép buộc chế tạo cho chúng một loại vũ khí hủy diệt hàng loạt. Nhưng thay vào đó, anh tự tay tạo ra một bộ áo giáp để cứu sống bản thân và thoát khỏi sự giam cầm. Lấy cảm hứng từ đó, anh nâng cấp bộ giáp mình đến một mức tối tân và phi thường hơn thông qua công ty của mình, Stark Industries. Anh sử dụng bộ giáp của mình để bảo vệ thế giới với tên gọi là Iron Man.</p>                                               									                                                									
+                                                <p class="item-price"><strike>400.00</strike> <b>269.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">                                               
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/28.png" class="img-fluid" alt=""></a>										                        									                                           									                                           									                              									                                           										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Ninja Rùa</h4>
+                                                <p hidden class="description-title">Ninja Rùa (tên gốc là Teenage Mutant Ninja Turtles, tạm dịch là Những thiếu niên Ninja Rùa đột biến) là một bộ tứ siêu anh hùng hư cấu gồm những chú rùa đi bằng hai chân vị thành niên, được huấn luyện theo nghệ thuật Ninja Ninjitsu cổ đại xuất hiện trong một loạt phim cùng tên bao gồm truyện tranh, phim hoạt hình dành cho trẻ em, phim truyện và các sản phẩm liên kết khác. Các nhân vật được tạo ra vào năm 1984 từ nhóm tác giả-họa sĩ truyện tranh Peter Laird và Kevin Eastman, họ đã đặt tên bốn con rùa theo tên các nghệ sĩ thời Phục hưng Ý, và xuất bản cuộc phiêu lưu của các nhân vật trong truyện tranh do Mirage Studios xuất bản.</p>
+                                                <p hidden class="description">Trong câu chuyện của họ, những con rùa đã được huấn luyện về môn võ thuật nhẫn thuật của Nhật Bản từ người cha nuôi của chúng là một sư phụ chuột nhân hình Splinter. Từ ngôi nhà của họ trong hệ thống cống rãnh của Thành phố New York, họ chiến đấu với những tên tội phạm, trùm độc ác, sinh vật đột biến và những kẻ xâm lược ngoài hành tinh trong khi cố gắng ẩn mình khỏi xã hội. Từ năm 1984, loạt truyện tranh về Ninja Rùa với bốn chú rùa xanh đột biến, có hình dạng như người chiến đấu bảo vệ hòa bình cho người dân thành phố New York đã trở thành hiện tượng và được yêu thích khắp toàn cầu. Từ nhân vật truyện tranh đình đám, các nhà sản xuất quyết định đưa các chú Ninja Rùa lên các loạt phim hoạt hình, nhạc kịch, phim điện ảnh.</p>                                               									                                                									                                               									
+                                                <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">                                                                                              
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/29.png" class="img-fluid" alt=""></a>										                        									                                           									                                           									                              									                                           										                                           										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Slam Dunk Volleyball</h4>
+                                                <p hidden class="description-title">Slam Dunk (SLAM DUNK Suramu Danku?) là bộ manga thể thao dài 31 tập được sáng tác bởi tác giả Inoue Takehiko nói về đội bóng rổ của trường cao trung Shōhoku. Slam Dunk ra mắt độc giả lần đầu tiên trên tạp chí truyện tranh phát hành hàng tuần Shonen Jump ở Nhật Bản và đã bán được hơn 100 triệu bản trên đất nước này. TVM Comics đã mua bản quyền xuất bản tại Việt Nam với tên bản quyền hiện tại là tên gốc. </p>
+                                                <p hidden class="description">Nhân vật chính của bộ manga này là Sakuragi Hanamichi, một kẻ giữ kỉ lục "T bình phương" (thất tình), có sức mạnh vượt trội và rất nóng máu, là kẻ đứng đầu một nhóm học sinh được thầy cô đánh giá là chuyên quậy phá. Một lần tình cờ, cậu ta quen được Akagi Haruko, là cô gái trong mơ của cậu. Hanamichi cảm thấy hạnh phúc cực kì khi cô ấy không sợ cậu như những cô gái khác.
+
+                                                    Haruko người đã nhận ra khả năng tiềm ẩn của Hanamichi, đã giới thiệu cậu vào đội bóng rổ trường Shohoku. Hanamichi lúc đầu cũng không thích môn bóng rổ cho lắm vì cậu chưa từng chơi bất kì môn thể thao nào trước đó; thêm nữa, Hanamichi cho rằng bóng rổ là môn thể thao dành cho kẻ thua cuộc</p>                                               									                                                									                                               									                                                									
+                                                <p class="item-price"><strike>400.00</strike> <b>269.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/14.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Roronoa Zoro</h4>
+                                                <p hidden class="description-title">Roronoa Zoro[7] (ロロノア・ゾロ? Roronoa Zoro), biệt danh "Thợ săn hải tặc" Zoro[8] (海賊狩りのゾロ Kaizoku-Gari no Zoro?) là một nhân vật hư cấu và là một trong những nhân vật chính của loạt anime và manga One Piece của Eiichiro Oda.</p>
+                                                <p hidden class="description">Zoro là một thanh niên vạm vỡ với làn da rám nắng. Anh luôn mang theo ba thanh kiếm bên mình và quấn một chiếc haramaki màu xanh lá cây bên hông phả. Trong số ba thanh kiếm anh mang theo bên người, anh luôn mang theo trên mình thanh Wado Ichimonji, trong khi hai thanh kiếm khác của anh thay đổi theo thời gian do chúng bị phá hủy và sau đó được thay thế bằng những thanh khác tốt hơn. Anh ấy cũng có ba khuyên tai vàng giống hệt nhau trên tai trái của mình. Zoro thường buộc một chiếc khăn rằn màu đen quanh bắp tay trái và sẽ đeo khăn quanh đầu khi đang phải chiến đấu với kẻ thù lớn.</p>                                               									                                                									                                               									                                                                                              									
+                                                <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/30.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Naruto</h4>
+                                                <p hidden class="description-title">Naruto là một loạt manga Nhật Bản được viết và minh họa bởi Kishimoto Masashi. Manga được đăng lần đầu trên tạp chí Weekly Shonen Jump từ tháng 9 năm 1999 đến tháng 11 năm 2014, và sau đó được Shueisha phát hành thành 72 tập tankōbon. Câu chuyện xoay quanh Uzumaki Naruto, một ninja trẻ muốn tìm cách khẳng định mình để được mọi người công nhận và nuôi ước mơ trở thành Hokage - người lãnh đạo Làng Lá.</p>
+                                                <p hidden class="description">Naruto nằm ở vị trí thứ tư trong danh sách manga bán chạy nhất, bán được 250 triệu bản trên toàn thế giới, với 153 triệu bản được bán ra chỉ tính riêng ở Nhật Bản và 97 triệu bản còn lại là ở những nơi khác. Tác phẩm trở thành một trong những xê-ri manga bán chạy nhất của Viz Media; các bản dịch tiếng Anh của tập truyện nhiều lần xuất hiện trong danh sách bán chạy nhất của USA Today và The New York Times, và tập thứ bảy giảnh được giải Quill Award vào năm 2006. Được các nhà phê bình đánh giá tích cực về sự phát triển nhân vật của manga, cốt truyện mạnh mẽ, các cảnh chiến đấu được thực hiện khá tốt, mặc dù các cảnh đánh nhau làm chậm nhịp câu chuyện.</p>                                               									                                                									                                               									                                                                                              									                                               									
+                                                <p class="item-price"><strike>400.00</strike> <b>269.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">                                               
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/31.png" class="img-fluid" alt=""></a>										                                           										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Majin Boo</h4>
+                                                <p hidden class="description-title">Majin Buu (魔人ブウ Majin Bu?) hay gọi là Majin Buu (Ma Bu) trong bộ phim anime truyền hình dài tập của Toei Animation là một nhân vật phản diện trong seri phim dài tập Dragon Ball. Majin Boo có nhiều hình dạng khác nhau, mỗi hình dạng mang một tính cách khác nhau nhưng được gọi chung một tên là Majin Boo.</p>
+                                                <p hidden class="description">*Majin Buu thuần khiết: hình dạng đầu tiên của Majin Boo khi được công chiếu trên truyền hình, xưa Majin Boo đã đánh bại các Đại thần Kai nên Majin Boo bắt đầu chia hình dạng của mình thành 2 hình dạng là Majin Boo Béo (sau này sẽ trở thành Majin Boo tốt) và Majin Boo Gầy (Majin Boo xấu). </p>                                               									                                                									                                               									                                                                                                                             									
+                                                <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/32.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Trunks Kid</h4>
+                                                <p hidden class="description-title">Trunks (トランクス Torankusu?) là một nhân vật trong truyện tranh Dragon Ball, và anime Dragon Ball Z và Dragon Ball GT. Là con người lai Saiyan với Trái Đất. Trong tiếng Anh Dubs của Budokai và loạt Budokai Tenkaichi video game, Trunks được gọi là Kid Trunks, để phân biệt với các đối tác trong tương lai của mình thay thế.</p>
+                                                <p hidden class="description">Trunks có mái tóc của mẹ mình và màu mắt (màu tím và màu xanh, tương ứng), mặc dù sau này có hình dạng giống như cha mình, như là một hậu duệ của ông nội, tóc và đôi mắt của cậu vẫn biến thành màu vàng và màu xanh lá cây khi cậu trở thành một siêu Saiyan. Tương lai Trunks quàng khăn vàng, quần đen, một áo sơ mi đen tay dài, và một áo chàm Capsule Corporation. (Mặc dù áo của cậu màu xanh nhạt và mang dòng chữ "Capsule" trong bộ phim "Lịch sử của Trunks"). Anh là Saiyan nam duy nhất không có màu tóc đen. Điều này đúng cho cả hiện tại và tương lai Trunks.</p>                                               									
+                                                <p class="item-price"><strike>400.00</strike> <b>269.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <a href="../html/details.html" class="img-to-detail"><img src="../assets/img/img_figure/37.png" class="img-fluid" alt=""></a>										
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mô hình Naruto Prenium </h4>
+                                                <p hidden class="description-title">Boruto: Naruto the Movie là một bộ phim hoạt hình Nhật Bản ra mắt năm 2015 và là bộ phim đầu tay của đạo diễn Yamashita Hiroyuki dựa trên manga và anime Naruto của Kishimoto Masashi, và là bộ phim thứ hai thuộc chính truyện Naruto, là phần tiếp theo của loạt manga. Phim có sự tham gia của Sanpei Yūko, Junko Takeuchi, Kokoro Kikuchi và Noriaki Sugiyama. Bối cảnh của bộ phim được đặt sau phần cuối của Naruto. Bộ phim tập trung vào nhân vật chính Uzumaki Boruto, con trai của nhân vật chính trong Naruto Uzumaki Naruto.</p>
+                                                <p hidden class="description">Bộ phim mở đầu bằng phân cảnh chiến đấu giữa ninja Uchiha Sasuke với kẻ thù Otsutsuki Kinshiki dưới sự theo dõi bởi một kẻ thù khác có tên Otsutsuki Momoshiki. Bộ phim sau đó chuyển cảnh sang nhân vật chính của bộ truyện Naruto, Uzumaki Naruto, người đã trở thành "Hokage đệ Thất", người đứng đầu làng Lá. Anh kết hôn với Uzumaki Hinata và có hai người con, Uzumaki Boruto và Uzumaki Himawari. Boruto cùng Sarada Uchiha (con gái của Sasuke và Sakura) và Mitsuki (con trai của Orochimaru) trở thành thành viên của một đội ninja dưới sự dẫn dắt của người thầy của họ, Sarutobi Konohamaru. Boruto trở nên bực bội với Naruto vì cha cậu tập trung nhiều vào công việc Hokage hơn là gia đình của họ.</p>                                           
+                                                <p class="item-price"><strike>400.00</strike> <b>369.000₫</b></p>
+                                            </div>
+                                            <button class="btn btn-primary add-cart" type="button" >Thêm vào giỏ</button>	                                            </div>						
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                        </ol>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center ">
+                              <li class="page-item" data-target="#myCarousel" data-slide="prev">
+                                <a class="page-link" href="#" >
+                                  <span >&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item page-1" data-target="#myCarousel" data-slide-to="0"><a class="page-link pg" href="#">1</a></li>
+                              <li class="page-item page-2" data-target="#myCarousel" data-slide-to="1"><a class="page-link pg" href="#">2</a></li>
+                              <li class="page-item page-3" data-target="#myCarousel" data-slide-to="2"><a class="page-link pg" href="#" >3</a></li>
+                              <li class="page-item" data-target="#myCarousel" data-slide="next">
+                                <a class="page-link" href="#">
+                                  <span>&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                </div>
+                
+            </div>
+            
+            </section>
+            
+            
+        </div>
+        <footer class="mt-5 bg-dark text-white text-center">
+            <div class="container px-4 pt-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h5 class="text-uppercase">CẢM ƠN BẠN ĐÃ GHÉ THĂM</h5>
+          
+                  <p style="text-align: justify;">
+                    Đây là một website bán đồ chơi figure cho trẻ em, hy vọng khách hàng có những giây phút vui vẻ mua sắm tại đây!
+                    Chúng tôi cam kết phát triển các sản phẩm chất lượng cao và mở rộng phạm vi của mình trong thế giới trò chơi điện tử và anime.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="text-uppercase">Liên kết</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="./index.html" >TRANG CHỦ</a>
+                    </li>
+                    <li>
+                        <a href="./ProductDetails.html" >SẢN PHẨM</a>
+                      
+                    </li>
+                    <li>
+                        <a href="./hotro.html" >HỖ TRỢ</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html" >VỀ CHÚNG TÔI</a>
+                    </li>
+                    <li class="icon">
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+                        <a href="https://twitter.com/?lang=en"> <i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a href="./ProductDetails.html"><i class="fa fa-shopping-basket"></i></a>
+                    </li>
+                    <a href="https://www.youtube.com/" class="button youtube ml-2">
+                        <span class="button-icon">
+                            <i class="fa fa-youtube-play"></i>
+                        </span>
+                        <span class="button-text">
+                            Kênh Video Của Chúng Tôi
+                        </span>
+                    </a>
+                  </ul>
+                </div>
+                <div class="col-lg-2">
+                    <img src="../assets/img/footer-logo.png" height="100px" style="margin-top:20px;">
+                    
+                </div>
+              </div>
+            </div>
+            <div class="text-center p-3" style="background-color: #009933;">
+              © BẢN QUYỀN THUỘC VỀ NGUYỄN DƯƠNG THANH DỰ VÀ NGUYỄN HIẾU HỌC
+              
+            </div>
+          </footer>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                        <div class="cart-items"></div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0 USD</span>
+                        </div>
+                        </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                </div>
+            </div>
+            
+            <script src="../js/ProducttoCart.js"></script>
+            <!-- <script src="../js/ProductToProductDetails.js"></script> -->
+        </div>
+        
+        
+    </div>
+    
+        <!-- <script src="../js/ProducttoCart.js"></script> -->
+
+    </body>
+    </html>
+    
+
+
+    
